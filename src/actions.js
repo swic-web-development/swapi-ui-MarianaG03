@@ -4,7 +4,7 @@ export async function fetchPeople() {
   store.setState({ isLoading: true, error: null })
 
   try {
-    const res = await fetch('https://swapi.dev/api/people/')
+    const res = await fetch('https://www.swapi.tech/api/people/')
     const data = await res.json()
 
     store.setState({ people: data.results, isLoading: false })
